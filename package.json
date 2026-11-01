@@ -1,0 +1,9 @@
+{
+  "name": "redline-garage",
+  "version": "1.0.0",
+  "description": "Self-hosted dirt bike maintenance, engine hours and lap time tracker",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": { "start": "node --no-warnings server/server.js" }
+}

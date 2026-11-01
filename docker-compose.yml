@@ -1,0 +1,12 @@
+services:
+  garage:
+    build: .
+    container_name: redline-garage
+    restart: unless-stopped
+    ports:
+      - "8250:8250"
+    environment:
+      TZ: America/Toronto
+      # APP_PASSWORD: change-me   # uncomment to require a password (any username)
+    volumes:
+      - ./data:/app/data
